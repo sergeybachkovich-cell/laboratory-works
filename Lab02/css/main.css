@@ -1,0 +1,37 @@
+@import url('reset.css');
+@import url('vars.css');
+@import url('header.css');
+@import url('table.css');
+@import url('footer.css');
+
+body {
+    background-image: url("https://avatars.mds.yandex.net/i?id=58cd853baf581d8a13a914968b62fec7_l-5298260-images-thumbs&n=13");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, th {
+    padding-top: 40px;
+    font-family: var(--bold);
+}
+
+pre {
+    font-family: var(--medium);
+    text-align: justify;
+    padding-left: var(--pd-body);
+    padding-top: var(--pd-body);
+    
+}
+
+img {
+  size: 5px;
+  border-radius: 7%;
+}
+
+a {
+    color: brown;
+}
+
+

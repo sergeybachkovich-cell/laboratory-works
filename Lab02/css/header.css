@@ -1,0 +1,15 @@
+#menu {
+    display: block;
+    flex-direction: column;
+    width: flex;
+    padding: 1%;
+}
+#menu {
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
+#menu:hover {
+    border-radius: 20px;
+    opacity: 1;
+}
