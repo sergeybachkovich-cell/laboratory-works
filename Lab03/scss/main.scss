@@ -1,0 +1,6 @@
+@use 'variables' as v;
+@use 'content';
+@use 'figures';
+*{
+    font-family: v.$font-main;
+}

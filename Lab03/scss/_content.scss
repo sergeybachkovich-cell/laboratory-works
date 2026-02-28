@@ -1,0 +1,9 @@
+section.content-section {
+    & h2 {
+        font-family: v.$font-main;
+        font-weight: v.$fw-light;
+    }
+    & p { // Теперь это превратится в: section.content-section p
+        text-indent: 2%;
+    }
+}

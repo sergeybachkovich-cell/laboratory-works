@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Oxygen';
+    src: ('../asseets/fonts/Oxygen-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Oxygen';
+    src: ('../asseets/fonts/Oxygen-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Oxygen';
+    src: ('../asseets/fonts/Oxygen-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+$font-main: 'Oxygen', sans-serif;
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-bold: 700;
+
+$clr-white: #fff;
+$clr-black: #000;
+$clr-blue:  #5EBCFF;
