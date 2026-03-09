@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-title">Форма (Вариант 15)</div>
+        <form action="process.php" method="GET" enctype="application/x-www-form-urlencoded">
+            <table class="form-table">
+            <tr>
+                <td class="form-label">Ф.И.О.:</td>
+                <td><input type="text" name="fio" class="form-input" size="18" maxlength="50"></td>
+                <td><a href="frame_5.html#fio" target="info_panel" class="help-link">?</a></td>
+            </tr>
+            <tr>
+                <td class="form-label">Область:</td>
+                <td>
+                    <select name="activity" class="form-select">
+                        <option value="">Выберите...</option>
+                        <option value="it">IT</option>
+                        <option value="med">Медицина</option>
+                        <option value="phys">Физика</option>
+                    </select>
+                </td>
+                <td><a href="frame_5.html#activity" target="info_panel" class="help-link">?</a></td>
+            </tr>
+            <tr>
+                <td class="form-label">Год рожд.:</td>
+                <td><input type="text" name="birth_year" class="form-input" size="6" maxlength="4"></td>
+                <td><a href="frame_5.html#year" target="info_panel" class="help-link">?</a></td>
+            </tr>
+            <tr>
+                <td class="form-label">Страна:</td>
+                <td><input type="text" name="country" class="form-input" size="15" maxlength="30"></td>
+                <td><a href="frame_5.html#country" target="info_panel" class="help-link">?</a></td>
+            </tr>
+            <tr>
+                <td class="form-label">Публикаций:</td>
+                <td><input type="text" name="pub_count" class="form-input" size="5" maxlength="4"></td>
+                <td><a href="frame_5.html#pub" target="info_panel" class="help-link">?</a></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="form-buttons">
+                    <input type="submit" value="Отправить" class="btn-submit">
+                    <input type="reset" value="Очистить" class="btn-reset">
+                </td>
+            </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

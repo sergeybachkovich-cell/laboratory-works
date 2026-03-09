@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'light';
+    src: url(../assets/fonts/Montserrat-Light.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'medium';
+    src: url(../assets/fonts/Montserrat-Medium.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url(../assets/fonts/Montserrat-Bold.woff2) format('woff2');
+}
+
+:root {
+    /* Шрифты */
+    --light: 'light', sans-serif;
+    --medium: 'medium', sans-serif;
+    --bold: 'bold', sans-serif;
+    
+    /* отступы */
+    --pd-head: 5%;
+    --pd-body: 5%;
+    --pd-foot: 5%;
+}

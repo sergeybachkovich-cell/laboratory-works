@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>lab3 - Исправленная структура</title>
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+
+<!-- Внешний фреймсет: Шапка (80px), Контент (всё остальное), Футер (40px) -->
+<frameset rows="80, *, 40" border="1" frameborder="yes" framespacing="2">
+    
+    <!-- Фрейм 1: Шапка (лого + заголовок) -->
+    <frame src="frames/frame_1.html" name="header" scrolling="no" noresize>
+
+    <!-- Средняя зона: Меню слева (180px) и всё остальное справа -->
+    <frameset cols="180, *">
+        <!-- Фрейм 2: Панель навигации -->
+        <frame src="frames/frame_2.html" name="menu" scrolling="no">
+
+        <!-- Правая часть: Основной контент и Окно форм под ним -->
+        <frameset rows="*, 130">
+            <!-- Фрейм 3: Главное окно (Вид окна для ссылок) -->
+            <frame src="frames/frame_3.html" name="main" noresize="noresize">
+            
+            <!-- Фрейм 4: Окно для формы -->
+            <frame src="frames/frame_4.html" name="form_area" scrolling="auto">
+        </frameset>
+    </frameset>
+
+    <!-- Фрейм 5: Инфо-панель (самый низ) -->
+    <frame src="frames/frame_5.html" name="info_panel" scrolling="no">
+
+</frameset>
+<noframes>
+    <body>Ваш браузер не поддерживает фреймы.</body>
+</noframes>
+</html>

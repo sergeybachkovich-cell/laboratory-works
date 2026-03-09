@@ -1,0 +1,10 @@
+footer {
+
+    font-family: var(--medium);
+    background-color: rgba(0, 0, 0, 0.698);
+    color: rgb(255, 255, 255);
+
+    text-align: justify;
+    padding-left: var(--pd-footer);
+    padding-top: var(--pd-footer);
+}
