@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: 'Montserrat-SemiBold';
+            src: url(fonts/Montserrat-SemiBold.ttf) format('truetype');
+            font-style: normal;
+            font-weight: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat-Regular';
+            src: url(fonts/Montserrat-Regular.ttf) format('truetype');
+            font-style: normal;
+            font-weight: normal;
+        }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url(fonts/Montserrat-Light.ttf) format('truetype');
+            font-style: normal;
+            font-weight: normal;
+        }
+    </style>
+
+    <title>My site</title>
+</head>
+<body style="
+background: url(slideshow/background.png);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+">
+    <header>
+        <h1 style="
+        font-family: 'Montserrat-SemiBold';
+        font-size: xx-large;
+        font-weight: bold;
+        letter-spacing: -0.02em;
+        color: rgb(0, 255, 4);
+        /* line-height: 1.2; */
+        text-align: center;
+        ">
+            Лабораторная работа 1. Создание простых HTHL страниц. <br>
+            Создание простых HTML страниц. <br>
+            Структура HTML документов, теги форматирования. <br>
+        </h1>
+    </header>
+    
+    <br>
+    <h3 style="
+    font-family: 'Montserrat-Regular';
+    color:rgb(255, 191, 0);
+    display: flex;
+    justify-content: center;
+    ">Цель работы:</h3>
+    <p style="
+    margin-top: 40px;
+    font-family: 'Montserrat-Regular';
+    color: rgb(238, 255, 0);
+    letter-spacing: 2px;
+    text-indent: 30px;
+    ">
+        Создание многостраничного веб-сайта на языке html, реализация перехода
+    </p>
+    <p style="
+    font-family: 'Montserrat-Regular';
+    color: rgb(238, 255, 0);
+     letter-spacing: 2px;
+    ">
+        между страницами и базовое оформление страницы.
+    </p>
+
+        <a href="pages/main.html" style="
+        display: flex; justify-content: center; align-items: center; margin: 10%; text-decoration: none; outline: none; "><button class="main-btn"
+            style="
+                font-family: 'Montserrat-SemiBold';
+                color:turquoise;
+                background-color: rgb(87, 33, 137);
+                font-weight: bold;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 30px;
+                width: 200px;
+                height: 50px;
+                border: none;
+                box-shadow: 
+                0 5px 2px rgba(5, 130, 255, 0.3),
+                0 10px 20px rgba(0, 0, 0, 0.50);
+
+                /* убирает подчеркивание при нажатии */
+                text-decoration: none;
+                outline: none;
+                ">На главную</button></a>
+
+    <footer>
+        <br>
+        <address style="
+        margin-top: 10%;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        font-family: 'Montserrat';
+        color:rgb(0, 255, 4);
+        font-size: small;
+        text-decoration: underline;
+        ">
+            <div>Понтелеенко С.В.</div>
+            <div>Группа: КФ-17</div>
+        </address>
+    </footer>
+</body>
+</html> 

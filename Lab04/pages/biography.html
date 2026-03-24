@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Biography</title>
+</head>
+<body>
+    <header>
+        <button id="btn">
+            <img src="../icons/menu.png" alt="menu" loading="lazy" width="100%">
+            menu
+        </button>
+        <nav id="menu">
+          <a href="main.html">
+          <img src="../icons/homepage.png" alt="homepage" loading="lazy" width="5%">
+          home
+          </a>
+          <a href="../index.html">
+          <img src="../icons/reload.png" alt="index" width="5%" loading="lazy">
+          index
+          </a>
+          <a href="biography.html">
+          <img src="../icons/avatar.png" alt="biography" loading="lazy" width="5%">
+            biography
+          </a>
+          <a href="hobby.html">
+          <img src="../icons/cards.png" alt="hobby" loading="lazy" width="5%">
+          hobby
+          </a>
+          <a href="hobby.html">
+          <img src="../icons/bascket.png" alt="shop" loading="lazy" width="5%">
+          shop
+          </a>
+          </nav>
+    </header>    
+    <h2>Автобиография</h2>
+    <div class="img-container"><img src="../icons/Myavatar.png" alt="фото" loading="lazy" width="20%">
+</div>
+
+    <p>
+Я, Понтелеенко Сергей Владимирович, родился 14 января 2004 года в г. Гомель.
+<br>
+В настоящее время являюсь студентом 1-го курса гомельского государственного университета имени Франциска Скорины, обучаюсь на факультете физики и информационных технологий по специальности «Компьютерная физика».
+<br>
+В период получения высшего образования уделяю значительное внимание всестороннему развитию компетенций, не ограничиваясь рамками учебной программы. Моя внеучебная деятельность: единоборства, велоспорт и музыка.
+<br><br>
+Физическая культура и спорт
+<br>
+С 2021 года на регулярной основе занимался единоборствами. 
+<br>
+Системный подход к тренировочному процессу позволил мне выработать высокую стрессоустойчивость и дисциплинированность.
+<br> 
+Данный вид спорта рассматриваю как основной инструмент формирования волевых качеств и навыков оперативного принятия решений в дефиците времени.
+<br>
+С 2019 года увлекаюсь велоспортом. Данное хобби способствует развитию выносливости и позволяет эффективно переключать внимание между интенсивными интеллектуальными задачами.
+<br> 
+Опыт длительных заездов развил навыки планирования маршрутов.
+<br><br>
+Творческая и интеллектуальная деятельность
+<br>
+На протяжении шести лет занимался музыкой (музыкальный инструмент баян). 
+<br>
+Данная деятельность способствует развитию творческого мышления и мелкой моторики, а также улучшает когнитивные способности, необходимые для освоения языков программирования и архитектуры программных систем.
+<br>
+Совмещаю обучение в техническом вузе с тремя разнонаправленными увлечениями. 
+<br>
+Мною выстроена система приоритетов, позволяющая поддерживать средний балл академической успеваемости, при этом уделяя спорту и творчеству до 15 часов в неделю.
+<br>
+Накопленный опыт в спортивной и творческой сферах планирую включить в профессиональную деятельность для повышения личной эффективности и работы в многозадачном режиме.
+    </p>
+    <script src="script.js"></script>
+    <style>
+    @font-face {
+        font-family: 'Montserrat-SemiBold';
+        src: url(../fonts/Montserrat-SemiBold.ttf) format(truetype);
+        font-size: x-large;
+        font-weight: bold;
+    }
+    @font-face {
+        font-family: 'Montserrat-Regular';
+        src: url(../fonts/Montserrat-Regular.ttf) format(truetype);
+        font-size: medium;
+        font-weight: normal;
+    }
+    @font-face {
+        font-family: 'Montserrat-Thin';
+        src: url(../fonts/Montserrat-Thin.ttf) format(truetype);
+        font-size: small;
+        font-weight: lighter;
+    }
+    body {
+    background: url('../slideshow/background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+  div.img-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-bottom: 10%;
+  }
+
+a {
+            color: rgba(255, 255, 255, 0.639);
+            align-items: center;
+            text-decoration:dashed;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat-SemiBold';
+    letter-spacing: 2px;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(0, 255, 55);
+    margin-bottom: 10%;
+}
+
+p, ul, ol {
+    font-size: 1.2em;
+    font-family: 'Montserrat-regular';
+    padding-left: 2%;
+    color:rgb(200, 255, 89);
+}
+
+footer {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.402);
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+button {
+    width: 3%;
+    display: block;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0.398);
+    font-size: 1.2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+button:hover {
+    width: 4%;
+}
+button.main-btn {
+    display: grid;
+    align-content: center;   /* Центрирует содержимое внутри (сетку) */
+    justify-items: center;   /* Центрирует текст/иконки по горизонтали внутри */
+    
+    margin: 2rem auto;       /* АВТО-отступы по бокам выравнивают саму кнопку по центру */
+    
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 20px;     /* Проценты могут сделать кнопку овальной, px надежнее */
+    background-color: rgba(42, 22, 42, 0.834);
+    width: 50%;
+    height: 10rem; 
+}
+
+button.main-btn:hover {
+}
+
+#menu {
+    display: none;
+    flex-direction: column;
+    width: fit-content;
+    padding: 1%;
+}
+#slide, #menu {
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
+#slide:hover, #menu:hover {
+    border-radius: 20px;
+    opacity: 1;
+}
+
+.cards-selection {
+    display: flex;
+}
+
+#btn-back, #btn-next, #btn-add {
+  filter: invert(100%);
+}
+
+.price-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cards-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 3%;
+}
+    </style>
+</body>
+</html>
