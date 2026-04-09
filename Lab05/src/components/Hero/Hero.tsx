@@ -1,3 +1,4 @@
+
 import styles from "./Hero.module.scss";
 interface HeroProps {
     className?: string;

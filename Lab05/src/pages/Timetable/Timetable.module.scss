@@ -1,0 +1,24 @@
+@use '../../styles/vars' as *;
+
+.timetable {
+    padding: 20px;
+
+    &__title {
+        margin-bottom: 32px;
+        font-size: 2rem;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-colums: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    &__item {
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: translateY(-4px);
+        }
+    }
+}
