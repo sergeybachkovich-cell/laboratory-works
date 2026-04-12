@@ -1,3 +1,4 @@
+@use '../../styles/vars' as *;
 .layout {
     display: grid;
     min-height: 100vh; // Обязательно, чтобы сетка растянулась на весь экран
@@ -9,17 +10,17 @@
 .layout__header {
     grid-row: 1;
     grid-column: 1/4;
-    background-color: aqua; // Твой цвет
+    background-color: $bg-header; // Твой цвет
 }
 
 .layout__container {
     grid-row: 2/4;
     grid-column: 1/4;
-    background-color: aqua;
+    background-color: $bg-body;
 }
 
 .layout__footer {
     grid-row: 4;
     grid-column: 1/4;
-    background-color: aqua; // Твой цвет
+    background-color: $bg-footer; // Твой цвет
 }

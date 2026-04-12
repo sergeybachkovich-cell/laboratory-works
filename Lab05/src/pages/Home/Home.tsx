@@ -8,6 +8,8 @@ function Home () { /*передалал на function с const*/
             <section className={style.home__content}>
                 <h1 className={style.home__title}>Добро пожаловать в Weblab5</h1>
                 <p className={style.home__description}>Это глваная страница приложения</p>
+                На титульной странице сайта (index.html), представляются сведения о вузе
+                (+фото), авторе (+фото), контактная информация
             </section>
         </main>
     );

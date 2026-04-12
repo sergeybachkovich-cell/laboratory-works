@@ -16,8 +16,11 @@ $text-main: rgba($color-black, 0.54);
 $text-specially: rgba($color-black, 0.6);
 
 // Цвета фона элементов
-$bg-header: $color-dark;
+$bg-header: rgba($color-white, 0.1);
+$bg-body: rgba($color-white, 0.54);
+$bg-footer: $color-gray;
 $bg-header-line: $color-gray;
+
 // Цвета активных элементов
 $active-primary: rgba($color-darkred, 0.5);
 $active-secondary: $color-blue;

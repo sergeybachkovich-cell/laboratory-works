@@ -17,14 +17,32 @@ function Header ({className}: HeaderProps) {
                 <h1 className={styles.header__h1}>Заголовок</h1>
             </div>
               
-            <nav className={styles.header__nav}>
+            <nav className={styles.nav}>
                 <ol className={styles.nav__list}>
                     <li className={styles.nav__item}>
-                        <NavLink to="/"
-                        // что значит строчка ниже? почему так странно передаются аргументы
-                        className={({isActive}) => `${styles.header__link} ${isActive ? styles.header__link_active : ''}`}
-                        >Главная</NavLink>
+                        <NavLink 
+                        to="/"
+                        className={ 
+                            ({isActive}) => 
+                                `${styles.header__link} ${isActive ? styles.header__link_active : ''}`
+                        }
+                    >
+                            Главная
+                        </NavLink>
                     </li>
+                    
+                    <li className={styles.nav__item}>
+                        <NavLink 
+                        to="/myfaculty"
+                        className={ 
+                            ({isActive}) => 
+                                `${styles.header__link} ${isActive ? styles.header__link_active : ''}`
+                        }
+                    >
+                            Мой факультет
+                        </NavLink>
+                    </li>
+
                     <li className={styles.nav__item}>
                         <NavLink to="/timetable"
                         className={({isActive}) => `${styles.header__link} ${isActive ? styles.header__link_active: ''}`}

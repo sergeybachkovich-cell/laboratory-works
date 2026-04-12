@@ -5,39 +5,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 30px;
-}
-.header__top {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: $gap-m;
+
+    &__top {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__h1 {
+        text-align: center;
+    }
 }
 
-.header__h1 {
-    text-align: center;
-}
+.nav {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center; 
 
-.header__nav {
+    &__list {
     display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center; 
-}
+    list-style: none;
+    gap: $gap-s;
+    }
 
-.nav__list {
-    display: flex;
-    gap: 20px;
-}
-
-.nav__item {
+    &__item {
     display: flex;
     width: 13rem;
     height: 2rem;
-    background-color: white;
-    height: 3rem;           /* Фиксированная высота (ок. 48px) */
-    border-radius: 1.5rem;  /* Ровно половина высоты сделает бока идеально полукруглыми */
+    background-color: $active-primary;
+    height: 3rem;           
+    border-radius: 1.5rem;  
     overflow: hidden;
-    border: 1px solid black;
+    border: 1px solid $color-black;
     align-self: center;
     text-align: center;
     justify-content: center;
@@ -48,3 +49,6 @@
     0 0 0 2px rgb(115, 255, 0),
     0.3em 0.3em 1em rgba(85, 0, 255, 0.3);
 }
+}
+
+
