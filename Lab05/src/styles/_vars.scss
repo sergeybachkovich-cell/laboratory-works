@@ -1,5 +1,4 @@
     // примитивы
-
 $color-white: #fff;
 $color-yellow: #F2BE42;
 $color-lightblue: #5186EC;
@@ -41,3 +40,8 @@ $gap-m: 16px;        // Основной отступ (между иконкой
 $gap-l: 24px;        // Отступы в модалках
 
 $transition: all 0.2s ease-in-out;
+
+// breakpoints
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 480px;

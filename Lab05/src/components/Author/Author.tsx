@@ -1,10 +1,12 @@
 import styles from './Author.module.scss';
+import avatar from '../../assets/pictures/Avatar.png';
 
 function Author () {
     return (
         <div className={styles.Author}>
         <header className={styles.Author__header}>
-            <h1 className={styles.Author__header__Title}>
+            <div className={styles.Author__header__info}>
+                <h1 className={styles.Author__header__Title}>
                 Имя Фамилия Отчество
             </h1>
             
@@ -20,6 +22,8 @@ function Author () {
                     22 года
                 </span>
             </address>
+            </div>
+            <img src={avatar} alt="" />
         </header>
 
             <div className={styles.Author__body}>

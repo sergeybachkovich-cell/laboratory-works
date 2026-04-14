@@ -1,7 +1,9 @@
 @use "../../styles/vars" as *;
-.footer__footer {
-    background-color: rgba($color-black, 0.5);
-}
-.footer__address {
-    color: $color-dark;
+.footer {
+    &__footer {
+        background-color: rgba($color-black, 0.5);
+    }
+    &__address {
+        color: $color-dark;
+    }
 }

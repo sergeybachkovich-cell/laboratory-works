@@ -20,17 +20,20 @@
 
 .nav {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         text-align: center;
         justify-content: center; 
+        margin-bottom: 10vh;
 
     &__list {
     display: flex;
     list-style: none;
     gap: $gap-s;
+    
     }
 
-    &__item {
+    &__item, &__first {
+    
     display: flex;
     width: 13rem;
     height: 2rem;
@@ -40,15 +43,22 @@
     overflow: hidden;
     border: 1px solid $color-black;
     align-self: center;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-
+    
     box-shadow:
-    inset 0 -3em 3em rgba(255, 238, 0, 0.1),
-    0 0 0 2px rgb(115, 255, 0),
-    0.3em 0.3em 1em rgba(85, 0, 255, 0.3);
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+    a {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 }
+    &__first {
+        width: 26rem;
+        margin-bottom: 20px;
+    }
 }
 
 

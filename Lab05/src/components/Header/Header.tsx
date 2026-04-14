@@ -18,8 +18,7 @@ function Header ({className}: HeaderProps) {
             </div>
               
             <nav className={styles.nav}>
-                <ol className={styles.nav__list}>
-                    <li className={styles.nav__item}>
+            <div className={styles.nav__first}>
                         <NavLink 
                         to="/"
                         className={ 
@@ -29,7 +28,8 @@ function Header ({className}: HeaderProps) {
                     >
                             Главная
                         </NavLink>
-                    </li>
+                </div>
+                <ol className={styles.nav__list}>
                     
                     <li className={styles.nav__item}>
                         <NavLink 
@@ -42,11 +42,28 @@ function Header ({className}: HeaderProps) {
                             Мой факультет
                         </NavLink>
                     </li>
+                    <li className={styles.nav__item}>
+                        <NavLink 
+                        to="/myfaculty"
+                        className={ 
+                            ({isActive}) => 
+                                `${styles.header__link} ${isActive ? styles.header__link_active : ''}`
+                        }
+                    >
+                        Моя группа
+                        </NavLink>
+                    </li>
 
                     <li className={styles.nav__item}>
                         <NavLink to="/timetable"
                         className={({isActive}) => `${styles.header__link} ${isActive ? styles.header__link_active: ''}`}
                         >Расписание</NavLink>
+                    </li>
+
+                    <li className={styles.nav__item}>
+                        <NavLink to="/examstable"
+                        className={({isActive}) => `${styles.header__link} ${isActive ? styles.header__link_active: ''}`}
+                        >Экзамены</NavLink>
                     </li>
                 </ol>
             </nav>
