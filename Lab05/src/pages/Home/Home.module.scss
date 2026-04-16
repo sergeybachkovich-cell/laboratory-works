@@ -1,3 +1,5 @@
+@use '../../styles/vars' as *;
+
 .home {
     display: flex;
     flex-direction: column;
@@ -17,6 +19,6 @@
     font-size: 32px;
     margin-bottom: 12px;
     font-family: sans-serif;
-    color: #555;
+    color: $text-main;
 }
 

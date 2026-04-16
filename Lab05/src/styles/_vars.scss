@@ -1,4 +1,4 @@
-    // примитивы
+// примитивы
 $color-white: #fff;
 $color-yellow: #F2BE42;
 $color-lightblue: #5186EC;
@@ -8,15 +8,38 @@ $color-dark: #202124;
 $color-gray: #767676;
 $color-black: #000;
 
+:root {
+  /* Светлая тема */
+  --bg-header: #{rgba($color-white, 0.1)};
+  --bg-body: #{rgba($color-white, 0.54)};
+  --text-main: #{rgba($color-dark, 0.54)}; /* Теперь это будет работать */
+}
+
+/* Вынесите это из :root для корректной работы */
+[data-theme='dark'] {
+  --bg-header: #{$color-dark};
+  --bg-body: #{$color-dark};
+  --text-main: #{rgba($color-white, 0.7)};
+}
+
+// Семантические токены — обязательно используйте функцию var() и круглые скобки
+$text-header: var(--text-main);
+$text-main: var(--text-main);
+$text-specially: var(--text-main);
+
+$bg-header: var(--bg-header);
+$bg-body: var(--bg-body);
+
+
     // семантические токены
 // Цвета текстов
-$text-header: $color-black;
-$text-main: rgba($color-black, 0.54);
-$text-specially: rgba($color-black, 0.6);
+$text-header: var(--text-main);
+$text-main: var(--text-main);
+$text-specially: var(--text-main);
 
-// Цвета фона элементов
-$bg-header: rgba($color-white, 0.1);
-$bg-body: rgba($color-white, 0.54);
+// Цвета фона элементов (тоже заменяем на переменные)
+$bg-header: var(--bg-header);
+$bg-body: var(--bg-body);
 $bg-footer: $color-gray;
 $bg-header-line: $color-gray;
 
@@ -45,3 +68,4 @@ $transition: all 0.2s ease-in-out;
 $desktop: 1024px;
 $tablet: 768px;
 $mobile: 480px;
+

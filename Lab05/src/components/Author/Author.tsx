@@ -2,8 +2,9 @@ import styles from './Author.module.scss';
 import avatar from '../../assets/pictures/Avatar.png';
 
 function Author () {
+
     return (
-        <div className={styles.Author}>
+            <div className={styles.Author}>
         <header className={styles.Author__header}>
             <div className={styles.Author__header__info}>
                 <h1 className={styles.Author__header__Title}>
@@ -43,7 +44,7 @@ function Author () {
                 </section>
             </div>
         
-        </div>
+        </div>       
     );
     
 }
