@@ -1,20 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.scss";
 import logo from "../../assets/pictures/logo.png";
 import sun_icon from "../../assets/icons/sun_icon.png";
 
 interface HeaderProps {
+    toggleTheme: () => void; // will be nothin return
+    isDark: boolean;
     className?: string;
 }
 
-function Header ({className}: HeaderProps) {
-
-    const [isDark, setIsDark] = useState<boolean>(false);
-    let theme = isDark ? styles.wrapper__dark : styles.wrapper__light;
+function Header ({toggleTheme, isDark, className}: HeaderProps) {
 
     return (
-        <div className={theme}>
             <div className={`${styles.header} ${className || ''}`}>
             <div className={styles.header__top}>
                 <div className={styles.header__logo_container}>
@@ -24,11 +22,7 @@ function Header ({className}: HeaderProps) {
 
                 <div className={styles.header__top__theme__wrapper}>
                     <button className={styles.header__top__theme__button}
-                    onClick={()=>{
-                        isDark? setIsDark(false)
-                        : setIsDark(true)
-                    }
-                }>
+                    onClick={toggleTheme}>
                         <img src={sun_icon} style={{width:'3vh', filter:'invert(1)'}} alt="переключ темы"/>
                     </button>
                 </div>
@@ -84,7 +78,6 @@ function Header ({className}: HeaderProps) {
                     </li>
                 </ol>
             </nav>
-        </div>
         </div>
         
     );

@@ -9,17 +9,19 @@ $color-gray: #767676;
 $color-black: #000;
 
 :root {
-  /* Светлая тема */
-  --bg-header: #{rgba($color-white, 0.1)};
-  --bg-body: #{rgba($color-white, 0.54)};
-  --text-main: #{rgba($color-dark, 0.54)}; /* Теперь это будет работать */
+  /* Light Theme (Default) */
+  --color--bg-page: #{$color-white};
+  --color--bg-header: #{rgba($color-white, 0.1)};
+  --color--text-main: #{$color-dark};
+  --color-border: #{$color-black};
 }
 
-/* Вынесите это из :root для корректной работы */
 [data-theme='dark'] {
-  --bg-header: #{$color-dark};
-  --bg-body: #{$color-dark};
-  --text-main: #{rgba($color-white, 0.7)};
+  /*Dark Theme*/
+  --color--bg-page: #{$color-dark};
+  --color--bg-header: #{$color-dark};
+  --color--text-main: #{$color-white};
+  --color-border: #{$color-white};
 }
 
 // Семантические токены — обязательно используйте функцию var() и круглые скобки
@@ -68,4 +70,5 @@ $transition: all 0.2s ease-in-out;
 $desktop: 1024px;
 $tablet: 768px;
 $mobile: 480px;
+$transition: all 0.3s ease;
 

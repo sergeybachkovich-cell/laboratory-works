@@ -33,7 +33,35 @@ function Author () {
                     <h2 className={styles.Author__body__content__Title}>
                         Опыт работы
                     </h2>
-                    
+                    <ul className={styles.Author__body__content__List}>
+                        <li className={styles.Author__body__content__Item}>
+                            <h3 className={styles.Author__body__content__Item__Title}>InnovaGroup</h3>
+                            <p className={styles.Author__body__content__Item__Position}></p>
+                            <ul className={styles.Author__body__content__Item__Responsibilities_List}>
+                                <h3 className={styles.Author__body__content__Item__Responsibilities_List__header}>
+                                    Должностные обязанности:
+                                </h3>
+                                <li className={styles.Author__body__content__Item__Responsibilities_Item}>
+                                    <p>Ведение проектов</p>
+                                </li>
+                                <li className={styles.Author__body__content__Item__Responsibilities_Item}>
+                                    <p>Написание ТЗ для дизайнеров и back-end разработчиков</p>
+                                </li>
+                                <li className={styles.Author__body__content__Item__Responsibilities_Item}>
+                                    <p>Верстка сайта и шаблонов для CMS</p>
+                                </li>
+                                <li className={styles.Author__body__content__Item__Responsibilities_Item}>
+                                    <p>Проверка на кроссбраузерность</p>
+                                </li>
+                                <li className={styles.Author__body__content__Item__Responsibilities_Item}>
+                                    <p>Рефакторинг чужого кода</p>
+                                </li>
+                                <li className={styles.Author__body__content__Item__Responsibilities_Item}>
+                                    <p>Тестирование сайтов</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                     
                 </section>
 
