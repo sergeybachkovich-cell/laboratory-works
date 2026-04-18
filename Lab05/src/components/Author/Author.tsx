@@ -12,7 +12,7 @@ function Author () {
             </h1>
             
             <p className={styles.Author__header__position}>
-                Фронтенд-разработчик
+                Frontend Developer (Junior)
             </p>
 
             <address className={styles.Author__header__address}>
@@ -69,6 +69,45 @@ function Author () {
                     <h2 className={styles.Author__body__aside__Title}>
                         Контакты
                     </h2>
+                    <ul className={styles.Author__body__content__Item}>
+                        <li className={styles.Author__body__content__Item}>
+                            <strong>Email:</strong> <a href="mailto:exapmle@mail.com">exapmle@mail.com</a>
+                        </li>
+
+                        <li className={styles.Author__body__content__Item}>
+                            <strong>Telegram:</strong> <a href="telegram">Telegram</a>
+                        </li>
+                        <li className={styles.Author__body__content__Item}>
+                            <strong>Github:</strong> <a href="Githublink">Github</a>
+                        </li>
+                    </ul>
+
+                    <h2 className={styles.Author__body__aside__Title} style={{marginTop: '2rem'}}>
+                        Языки
+                    </h2>
+
+                    <div className={styles.Author__languages}> {/* Блок/Элемент секции */}
+                    <h3 className={styles.Author__languageTitle}>Языки</h3>
+    
+                    <div className={styles.Author__languageItem}> {/* Группа для одного языка */}
+                        <div className={styles.Author__languageRow}>
+                            <span className={styles.Author__languageName}>Английский</span>
+                            <div className={styles.Author__progressBar}>
+                            <div className={styles.Author__progressFill} style={{ width: '80%' }} />
+                        </div>
+                    </div>
+        <span className={styles.Author__languageLevel}>C1 — Продвинутый</span>
+    </div>
+</div>
+
+                    <h2 className={styles.Author__body__aside__Title} style={{marginTop: '2rem'}}>
+                        Навыки
+                    </h2>
+                    <div className={styles.Author__header__address}>
+                        <p>React</p>
+                        <p>Typescript</p>
+                        <p>SCSS</p>
+                    </div>
                 </section>
             </div>
         
