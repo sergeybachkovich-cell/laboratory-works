@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Теоретический модуль JS</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1>Теоретический модуль JS</h1>
+
+    <!-- Задание 1 -->
+    <div class="task">
+        <h3>Задание 1: Вычисление выражения (x² - 7x + 10) / (x² - 8x + 12)</h3>
+        <div class="input-group">
+            <label>Введите x:</label>
+            <input type="number" step="any" id="task1_x" placeholder="Например: 3">
+        </div>
+        <button onclick="solveTask1()">Вычислить</button>
+        <div id="result1" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 2 -->
+    <div class="task">
+        <h3>Задание 2: Масса гантелей</h3>
+        <div class="input-group">
+            <label>Масса 1-й гантели (кг):</label>
+            <input type="number" step="any" id="task2_m1" placeholder="Например: 5">
+        </div>
+        <div class="input-group">
+            <label>Масса 2-й гантели (кг):</label>
+            <input type="number" step="any" id="task2_m2" placeholder="Например: 8">
+        </div>
+        <div class="input-group">
+            <label>Масса 3-й гантели (кг):</label>
+            <input type="number" step="any" id="task2_m3" placeholder="Например: 10">
+        </div>
+        <button onclick="solveTask2()">Рассчитать</button>
+        <div id="result2" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 3 -->
+    <div class="task">
+        <h3>Задание 3: Подсчет согласных и гласных в фамилии</h3>
+        <div class="input-group">
+            <label>Введите фамилию:</label>
+            <input type="text" id="task3_surname" placeholder="Например: Иванов">
+        </div>
+        <button onclick="solveTask3()">Подсчитать</button>
+        <div id="result3" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 4 -->
+    <div class="task">
+        <h3>Задание 4: Повторение символа под номером 5</h3>
+        <div class="input-group">
+            <label>Введите строку (20 символов):</label>
+            <input type="text" id="task4_str" maxlength="20" placeholder="Введите ровно 20 символов">
+        </div>
+        <button onclick="solveTask4()">Проверить</button>
+        <div id="result4" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 5 -->
+    <div class="task">
+        <h3>Задание 5: Арифметические действия</h3>
+        <div class="input-group">
+            <label>Число x:</label>
+            <input type="number" step="any" id="task5_x" placeholder="Например: 10">
+        </div>
+        <div class="input-group">
+            <label>Число y:</label>
+            <input type="number" step="any" id="task5_y" placeholder="Например: 5">
+        </div>
+        <div class="input-group">
+            <label>Действие:</label>
+            <select id="task5_op">
+                <option value="1">Сложение (1)</option>
+                <option value="2">Вычитание (2)</option>
+                <option value="3">Умножение (3)</option>
+                <option value="4">Деление (4)</option>
+            </select>
+        </div>
+        <button onclick="solveTask5()">Выполнить</button>
+        <div id="result5" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 6 -->
+    <div class="task">
+        <h3>Задание 6: Сопротивление участка цепи (Закон Ома)</h3>
+        <div class="input-group">
+            <label>Напряжение (В):</label>
+            <input type="number" step="any" id="task6_voltage" placeholder="Например: 220">
+        </div>
+        <div class="input-group">
+            <label>Ток (А):</label>
+            <input type="number" step="any" id="task6_current" placeholder="Например: 10">
+        </div>
+        <button onclick="solveTask6()">Вычислить</button>
+        <div id="result6" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 7 -->
+    <div class="task">
+        <h3>Задание 7: Эквивалентное сопротивление</h3>
+        <div class="input-group">
+            <label>R1 (Ом):</label>
+            <input type="number" step="any" id="task7_r1" placeholder="Например: 100">
+        </div>
+        <div class="input-group">
+            <label>R2 (Ом):</label>
+            <input type="number" step="any" id="task7_r2" placeholder="Например: 200">
+        </div>
+        <button onclick="solveTask7()">Рассчитать</button>
+        <div id="result7" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 8 -->
+    <div class="task">
+        <h3>Задание 8: Преобразование слов (а → о, удалить остальные а)</h3>
+        <div class="input-group">
+            <label>Введите слова (через пробел):</label>
+            <input type="text" id="task8_words" placeholder="Например: мама папа кошка">
+        </div>
+        <button onclick="solveTask8()">Преобразовать</button>
+        <div id="result8" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 9 -->
+    <div class="task">
+        <h3>Задание 9: Определение текущего времени и категории</h3>
+        <button onclick="solveTask9()">Определить</button>
+        <div id="result9" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 10 -->
+    <div class="task">
+        <h3>Задание 10: Простые числа от 2 до 10</h3>
+        <button onclick="solveTask10()">Найти</button>
+        <div id="result10" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 11 -->
+    <div class="task">
+        <h3>Задание 11: Анализ слов в строке</h3>
+        <div class="input-group">
+            <label>Введите текст:</label>
+            <textarea id="task11_text" rows="3" placeholder="Введите несколько слов"></textarea>
+        </div>
+        <button onclick="solveTask11()">Анализировать</button>
+        <div id="result11" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 12 -->
+    <div class="task">
+        <h3>Задание 12: Проверка на палиндром</h3>
+        <div class="input-group">
+            <label>Введите строку:</label>
+            <input type="text" id="task12_str" placeholder="Например: шалаш">
+        </div>
+        <button onclick="solveTask12()">Проверить</button>
+        <div id="result12" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 13 -->
+    <div class="task">
+        <h3>Задание 13: Валидация email</h3>
+        <div class="input-group">
+            <label>Введите email:</label>
+            <input type="email" id="task13_email" placeholder="Например: test@example.com">
+        </div>
+        <button onclick="solveTask13()">Проверить</button>
+        <div id="result13" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 14 -->
+    <div class="task">
+        <h3>Задание 14: Принадлежность точки кругу</h3>
+        <div class="input-group">
+            <label>Координата X точки:</label>
+            <input type="number" step="any" id="task14_x" placeholder="Например: 3">
+        </div>
+        <div class="input-group">
+            <label>Координата Y точки:</label>
+            <input type="number" step="any" id="task14_y" placeholder="Например: 4">
+        </div>
+        <div class="input-group">
+            <label>Координата Xc центра:</label>
+            <input type="number" step="any" id="task14_xc" placeholder="Например: 0">
+        </div>
+        <div class="input-group">
+            <label>Координата Yc центра:</label>
+            <input type="number" step="any" id="task14_yc" placeholder="Например: 0">
+        </div>
+        <div class="input-group">
+            <label>Радиус R:</label>
+            <input type="number" step="any" id="task14_r" placeholder="Например: 5">
+        </div>
+        <button onclick="solveTask14()">Проверить</button>
+        <div id="result14" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 15 -->
+    <div class="task">
+        <h3>Задание 15: Функция Y = 4*SIN(T) - 0.5*SIN(T) на [0.1, 0.8]</h3>
+        <button onclick="solveTask15()">Вычислить</button>
+        <div id="result15" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 16 -->
+    <div class="task">
+        <h3>Задание 16: Угол броска тела</h3>
+        <div class="input-group">
+            <label>Начальная скорость V₀ (м/с):</label>
+            <input type="number" step="any" id="task16_v0" placeholder="Например: 20">
+        </div>
+        <div class="input-group">
+            <label>Время полета t (с):</label>
+            <input type="number" step="any" id="task16_t" placeholder="Например: 2">
+        </div>
+        <button onclick="solveTask16()">Рассчитать</button>
+        <div id="result16" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 17 -->
+    <div class="task">
+        <h3>Задание 17: Площадь треугольника</h3>
+        <div class="input-group">
+            <label>Метод расчета:</label>
+            <select id="task17_method" onchange="updateTask17Inputs()">
+                <option value="sides">По трем сторонам</option>
+                <option value="twoSidesAngle">По двум сторонам и углу между ними</option>
+                <option value="baseHeight">По основанию и высоте</option>
+            </select>
+        </div>
+        <div id="task17_inputs_sides">
+            <div class="input-group">
+                <label>Сторона a:</label>
+                <input type="number" step="any" id="task17_a" placeholder="Например: 3">
+            </div>
+            <div class="input-group">
+                <label>Сторона b:</label>
+                <input type="number" step="any" id="task17_b" placeholder="Например: 4">
+            </div>
+            <div class="input-group">
+                <label>Сторона c:</label>
+                <input type="number" step="any" id="task17_c" placeholder="Например: 5">
+            </div>
+        </div>
+        <div id="task17_inputs_twoSidesAngle" style="display:none;">
+            <div class="input-group">
+                <label>Сторона a:</label>
+                <input type="number" step="any" id="task17_a2" placeholder="Например: 5">
+            </div>
+            <div class="input-group">
+                <label>Сторона b:</label>
+                <input type="number" step="any" id="task17_b2" placeholder="Например: 7">
+            </div>
+            <div class="input-group">
+                <label>Угол между ними (градусы):</label>
+                <input type="number" step="any" id="task17_angle" placeholder="Например: 60">
+            </div>
+        </div>
+        <div id="task17_inputs_baseHeight" style="display:none;">
+            <div class="input-group">
+                <label>Основание:</label>
+                <input type="number" step="any" id="task17_base" placeholder="Например: 10">
+            </div>
+            <div class="input-group">
+                <label>Высота:</label>
+                <input type="number" step="any" id="task17_height" placeholder="Например: 6">
+            </div>
+        </div>
+        <button onclick="solveTask17()">Вычислить</button>
+        <div id="result17" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 18 -->
+    <div class="task">
+        <h3>Задание 18: Ряд Фибоначчи</h3>
+        <div class="input-group">
+            <label>Количество элементов n:</label>
+            <input type="number" id="task18_n" min="1" max="50" placeholder="Например: 10">
+        </div>
+        <button onclick="solveTask18()">Вывести</button>
+        <div id="result18" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 19 -->
+    <div class="task">
+        <h3>Задание 19: Уникальные символы в строке</h3>
+        <div class="input-group">
+            <label>Введите строку:</label>
+            <input type="text" id="task19_str" placeholder="Например: программирование">
+        </div>
+        <button onclick="solveTask19()">Получить</button>
+        <div id="result19" class="result" style="display:none;"></div>
+    </div>
+
+    <!-- Задание 20 -->
+    <div class="task">
+        <h3>Задание 20: Массив случайных чисел</h3>
+        <div class="input-group">
+            <label>Количество элементов n:</label>
+            <input type="number" id="task20_n" min="1" placeholder="Например: 10">
+        </div>
+        <button onclick="solveTask20()">Создать</button>
+        <div id="result20" class="result" style="display:none;"></div>
+    </div>
+
+    <script src="./index.js"/>
+        
+</body>
+</html>

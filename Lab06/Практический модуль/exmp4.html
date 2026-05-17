@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Example 4</title>
+<script type="text/javascript" language="javascript">
+    var a = 100;
+var b = 10;
+var sum = 0;
+document.write('a=' + a + ', b=' + b + '<br>');
+a += b;
+document.write('Сложение a+=b. Результат: a=' + a + '<br>');
+document.write('a=' + a + ', b=' + b + '<br>');
+a -= b;
+document.write('Вычитание a-=b. Результат: a=' + a + '<br>');
+document.write('a=' + a + ', b=' + b + '<br>');
+a *= b;
+document.write('Умножение a*=b. Результат: a=' + a + '<br>');
+document.write('a=' + a + ', b=' + b + '<br>');
+a /= b;
+document.write('Деление a/=b. Результат: a=' + a + '<br>');
+document.write('a=' + a + ', b=' + b + '<br>');
+a = 9;
+b = 7;
+document.write('Переопределили a=' + a + ', b=' + b + '<br>');
+a %= b;
+document.write('Остаток от деления a%=b. Результат: a=' + a + '<br>');
+document.write('a=' + a + ', b=' + b + '<br>');
+document.write('Арифметические операторы a * b / a + b - a % b. Результат: a=' + (a * b / a + b - a % b) + '<br>');
+document.write('a=' + a + ', b=' + b + '<br>');
+a++;
+document.write('Инкремент a++. Результат: a=' + a + '<br>');
+a--;
+document.write('Декремент a--. Результат: a=' + a + '<br>');
+a = -a;
+document.write('Унарное вычитание a = -a. Результат: a=' + a + '<br>');
+</script>
+</head>
+<body>
+    <a href="#" onclick="alert('Вы нажали ' + (++sum) + ' раз');">Сколько
+раз нажата ссылка?</a><br><br>
+<form name="form1">
+Число1: <input type="text" name="first" value="30" size="4">
+Число2:<input type="text" name="second" value="4" size="4">
+Результат:<input type="text" name="result" value="" size="6"><br><br>
+<input type="button" value="Сложить"
+onclick="document.form1.result.value=parseInt(document.form1.first.value)
++ parseInt(document.form1.second.value)">
+<input type="button" value="Вычесть"
+onclick="document.form1.result.value=parseInt(document.form1.first.value)
+- parseInt(document.form1.second.value)">
+<input type="button" value="Умножить"
+onclick="document.form1.result.value=parseInt(document.form1.first.value)
+* parseInt(document.form1.second.value)">
+<input type="button" value="Разделить"
+onclick="document.form1.result.value=parseInt(document.form1.first.value)
+/ parseInt(document.form1.second.value)">
+<br><br>
+</form>
+Логические операторы:
+<select name="bool1">
+<option value=1>true</option>
+<option value=0>false</option>
+</select>
+<select name="bool2">
+<option value=0>false</option>
+<option value=1>true</option>
+</select>
+Результат:<input type="text" name="logRes" value=""><br>
+<input type="button" value="И &&"
+onclick="document.form1.logRes.value =
+((parseInt(document.form1.bool1.value) &&
+parseInt(document.form1.bool2.value)) == 0) ? false : true;">
+<input type="button" value="ИЛИ ||"
+onclick="document.form1.logRes.value =
+((parseInt(document.form1.bool1.value) ||
+parseInt(document.form1.bool2.value)) == 0) ? false : true;">
+<input type="button" value="НЕ !"
+onclick="document.form1.logRes.value =
+((!parseInt(document.form1.bool1.value)) == 0) ? false : true;">
+Операции со строками:<br>
+Строка1: <input type="text" name="str1" value="Java">
+Строка2: <input type="text" name="str2" value="Script">
+Результат:<input type="text" name="newStr" value=""><br>
+<input type="button" value="Склеить строки"
+onclick="document.form1.newStr.value=document.form1.str1.value +
+document.form1.str2.value"><br><br>
+</body>
+</html>

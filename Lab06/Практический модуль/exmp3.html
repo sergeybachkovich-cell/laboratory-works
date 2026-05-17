@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Example 3</title>
+<script type="text/javascript" language="javascript">
+    document.write('Сложим два числа 3 и 6 без присваивания их переменным: ' + (3 + 6) + '<br>');
+//Сразу вычисляется выражение в скобках, потом формируется строка
+//Если не записать (3+6) в скобках, то получится 36
+document.write('Без скобок: ' + 3 + 6 + '<br>');
+//Пример на логическое выражение
+var result = confirm("Вам больше 18 лет?");
+//Если нажата ОК, то result=true, отмена - result=false
+(result) ? document.write('Вам <b>больше</b> 18 лет!<br>') :
+document.write('Вам <b>меньше</b> 18 лет!<br>');
+</script>
+</head>
+<body>
+</body>
+</html>

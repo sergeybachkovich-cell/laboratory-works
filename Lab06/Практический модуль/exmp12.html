@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Example 12</title>
+<script type="text/javascript">
+    function checkFields(form) {
+if (form.name.value == '') {
+alert('Не заполнено имя!');
+form.name.focus();
+return false;
+}
+if (form.email.value == '') {
+alert('Не заполнен email!');
+form.email.focus();
+return false;
+}
+if (form.url.value == '') {
+alert('Введите URL сайта!');
+form.url.focus();
+return false;
+}
+if (form.message.value == '') {
+alert('Введите сообщение!');
+form.message.focus();
+return false;
+}
+alert('Форма заполнена!!! Все ОК!');
+//Прерываем отправку данных формы
+return false;
+}
+</script>
+</head>
+<body>
+<form action="" name="mail" onsubmit="return checkFields(this);"
+method="post">
+Имя:<input type="text" name="name" value=""><br>
+E-mail:<input type="text" name="email" value=""><br>
+URL сайта: <input type="text" name="url" value=""><br>
+Сообщение: <br>
+<textarea rows="6" cols="20" name="message"></textarea><br>
+<input type="submit" value="Отправить">
+<input type="reset" value="Очистить">
+</form>
+</body>
+</html>

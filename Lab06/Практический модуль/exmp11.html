@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Example 11</title>
+<script type="text/javascript">
+function square(a, b) {
+var s = parseFloat(a) * parseFloat(b);
+return s;
+}
+</script>
+</head>
+<body>
+    <form name="form1">
+Сторона a:<input type="text" name="a" value="1"><br>
+Сторона b:<input type="text" name="b" value="1"><br>
+Площадь: <input type="text" name="s" value=""><br>
+<input type="button" value="Вычислить"
+onclick="document.form1.s.value =
+square(document.form1.a.value, document.form1.b.value);">
+</form>
+</body>
+</html>

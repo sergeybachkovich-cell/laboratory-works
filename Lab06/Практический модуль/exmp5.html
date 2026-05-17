@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Example 5</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+var a = 3;
+var b = 8;
+document.write('a=' + a + ', b=' + b + '<br>');
+if (a > b) {
+document.write('a>b');
+} else {
+document.write('a<=b');
+}
+</script>
+<form name="form1">
+<input type="text" name="n" value="2">
+<input type="button" value="Четное или нечетное?"
+onclick="if(parseInt(document.form1.n.value) % 2 == 0){
+alert('Четное');
+} else {
+alert('Нечетное');
+}">
+</form>
+</body>
+</html>

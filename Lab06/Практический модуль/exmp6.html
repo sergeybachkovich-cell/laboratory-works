@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Example 6</title>
+</head>
+<body>
+<!-- Вычисление факториала-->
+<script type="text/javascript">
+var n = parseInt(prompt('Введите целое число:', 5));
+var factorial = 1;
+if (n < 0){
+n *= -1;
+}
+var buf = n;
+do {
+factorial *= n--;
+} while (n > 0);
+document.write('Факториал ' + buf + '! равен ' + factorial);
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Example 13</title>
+<script type="text/javascript" src="./js/example13.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+var car1 = new Car("ВАЗ 2109", "красный", 1989);
+var car2 = new Car("Audi 100", "коричневый", 1992);
+var car3 = new Car("Запорожец", "розовый", 1980);
+document.write(car1.toString()+'<br>');
+document.write(car2.toString()+'<br>');
+document.write(car3.toString()+'<br>');
+document.write(car2.go(87)+'<br>');
+document.write(car3.go(180)+'<br>');
+document.write(car1.go(142)+'<br>');
+document.write(car1.stop()+'<br>');
+document.write(car3.signal()+'<br>');
+
+var car4 = new Car("ВАЗ 9999", "карбон", 2030);
+var car5 = new Car("Audi 8000", "морская гладь", 2030);
+var car6 = new Car("Запорожец", "нежно бежевый", 2030);
+document.write(car4.toString()+'<br>');
+document.write(car5.toString()+'<br>');
+document.write(car6.toString()+'<br>');
+document.write(car5.go(87)+'<br>');
+document.write(car6.go(180)+'<br>');
+document.write(car4.go(142)+'<br>');
+document.write(car4.stop()+'<br>');
+document.write(car4.signal()+'<br>');
+</script>
+</body>
+</html>

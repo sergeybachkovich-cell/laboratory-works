@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Example 7</title>
+</head>
+<body>
+<!-- Вычисление степени числа-->
+<script type="text/javascript">
+var n = parseInt(prompt('Введите целое число:', 2));
+var grade = parseInt(prompt('Введите степень(целое, неотрицательное), в которую нужно возвести число ' + n + ':', 3));
+var buf = grade;
+var result = 1;
+if (n == 0.0)
+result = 0;
+else if (n != 0 && grade == 0)
+result = 1;
+else {
+(grade < 0) ? grade *= -1 : grade;
+buf = grade;
+while (grade > 0) {
+result *= n;
+grade--;
+}
+}
+document.write(n + '<sup>' + buf + '</sup>=' + result);
+</script>
+</body>
+</html>

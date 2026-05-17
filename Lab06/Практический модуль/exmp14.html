@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Example 14</title>
+<script type="text/javascript" src='js/example14.js'></script>
+</head>
+<body>
+<form name="dateForm">
+<input type="text" name="time" value="" size="100">
+</form>
+</body>
+<script type="text/javascript">
+function printDate() {
+document.dateForm.time.value = getCurrentDate();
+}
+window.setInterval("printDate()", 1000);
+</script>
+</html>

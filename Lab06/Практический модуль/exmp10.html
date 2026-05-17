@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Example 10</title>
+</head>
+<body onload="alert('Добро пожаловать на эту замечательную страницу')">
+<a href="#" onclick="alert('Событие Click')">Ссылка</a>
+<br><br><br>
+<form action="" method="post"
+onsubmit="alert('Нажата кнопка submit. Передача данных формы');
+return false;" name="form1">
+Поле1: <input type="text" name="field1"
+onfocus="alert('Выбрано первое поле');"
+onkeyup="document.form1.field2.value=this.value">
+<br>
+Поле2: <input type="text" name="field2"
+onfocus="alert('Выбрано второе поле');"><br>
+Список:
+<input type="submit" value="Кнопка submit">
+</form>
+<a href="#" onmouseover="alert('Событие MouseOver')">Подведите
+сюда курсор</a>
+<br><br><br>
+</body>
+</html>
