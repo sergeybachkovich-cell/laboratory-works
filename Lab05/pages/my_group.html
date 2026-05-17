@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Моя группа</title>
+</head>
+<body>
+
+    <!-- СЕКЦИЯ 1: Шапка -->
+    <header class="header">
+        <div class="header__logo-container">
+            <img src="../assets/icons/Logotypee.svg" alt="Ponteleenko">
+        </div>
+        <div class="header__title-container">
+            <h1>Lab 5 Solution</h1>
+        </div>
+    </header>
+
+    <!-- СЕКЦИЯ 2: Навигация -->
+    <nav id="menu-row">
+        <div class="nav-content">
+            <a href="../index.html"><img src="https://img.icons8.com/parakeet-partial-filled/48/home.png" alt=""> home</a>
+            <a href="../pages/my_fackultet.html"><img src="../assets/icons/fakultet.svg" alt=""> мой факультет</a>
+            <a href="../pages/my_group.html"><img src="https://img.icons8.com/windows/32/group2.png" alt=""> моя группа</a>
+            <a href="../pages/timelist.html"><img src="https://img.icons8.com/ios/50/timetable.png" alt=""> расписание</a>
+            <a href="../pages/exams.html"><img src="https://img.icons8.com/external-obvious-line-kerismaker/48/external-education-education-line-obvious-line-kerismaker-16.png" alt=""> экзамены</a>
+        </div>
+    </nav>
+
+    <!-- СЕКЦИЯ 3: Ресурсы -->
+    <div class="resources-row">
+        <div class="resources-label"><b>Ресурсы</b></div>
+        <div class="resources-link">
+            <a href="https://library.gsu.by/" target="_blank">
+                <img src="https://img.icons8.com/dotty/80/books.png" alt="" width="30px"> Ресурсы (Библиотека)
+            </a>
+        </div>
+    </div>
+
+    <!-- СЕКЦИЯ 4: Основной контент -->
+    <main class="main-content-row">
+        <div class="my-headings">
+            <div class="mygroup">
+                <h2>Моя группа: КФ-17</h2>
+                <!-- Таблица будет заполнена автоматически через main.js -->
+                <table class="mytables" id="table-group"></table>
+            </div>
+
+            <footer>
+                <address>
+                    <p><strong>Контакты</strong></p>
+                    <p>Адрес: 246019, г. Гомель, ул. Советская, 102</p>
+                    <p>E-mail: phys_dec@gsu.by</p>
+                    <p>Сайт: <a href="https://physfac.gsu.by/">physfac.gsu.by</a></p>
+                </address>
+            </footer>
+        </div>
+    </main>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>

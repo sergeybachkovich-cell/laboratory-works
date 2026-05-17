@@ -21,9 +21,9 @@ let numSlide = 0; // number of slide
 const slideshow = () => {
   const patch = '../slideshow/';
   const imgs = [
-    patch + 'html.png',
-    patch + 'css3.png',
-    patch + 'js.png',
+    patch + 'html.webp',
+    patch + 'css3.webp',
+    patch + 'js.webp',
   ];
   numSlide++;
 
